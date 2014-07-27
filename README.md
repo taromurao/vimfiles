@@ -5,7 +5,7 @@ Tested on MacOS and Linux
 
 ## Quick Install
 
-    curl https://raw.github.com/crahles/vimfiles/master/bootstrap.sh -o - | sh
+    curl https://raw.github.com/taromurao/vimfiles/master/bootstrap.sh -o - | sh
 
 ## INSTALLATION
 
