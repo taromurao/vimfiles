@@ -138,9 +138,6 @@ set wildignore=.svn,CVS,.git,*.swp,*.jpg,*.png,*.gif,*.pdf,*.bak
 " Set a lower priority for .old files
 set suffixes+=.old
 
-" rvm-vim automatically as you switch from buffer to buffer
-:autocmd BufEnter * Rvm
-
 "  ---------------------------------------------------------------------------
 "  Function Keys
 "  ---------------------------------------------------------------------------
@@ -277,3 +274,6 @@ autocmd! bufwritepost vimrc source %
 " Launch NERDTree
 nnoremap <C-n> :NERDTree<CR>
 
+" Haskell mode
+let g:haddock_browser = "open"
+let g:haddock_browser_callformat = "%s %s"
