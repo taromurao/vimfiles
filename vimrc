@@ -1,3 +1,5 @@
+set nocompatible      " We're running Vim, not Vi!
+
 " vim: nowrap fdm=marker
 "  ---------------------------------------------------------------------------
 "  Plugins
@@ -15,9 +17,13 @@ let mapleader = ","
 let g:mapleader = ","
 set modelines=0
 set history=10000
-set nobackup
-set nowritebackup
-set noswapfile
+" This tells Vim to keep a backup copy of a file when overwriting it.  But not
+" on the VMS system, since it keeps old versions of files already.
+if has("vms")
+  set nobackup
+else
+  set backup
+endif
 syntax enable
 set autoread
 
@@ -27,6 +33,8 @@ set autoread
 
 set title
 set encoding=utf-8
+set fencs=iso-2022-jp,euc-jp,cp932
+set fileencodings=ucs-bom,utf8,prc
 set scrolloff=3
 set autoindent
 set smartindent
@@ -265,4 +273,7 @@ colorscheme solarized
 " When vimrc, either directly or via symlink, is edited, automatically reload it
 autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost vimrc source %
+
+" Launch NERDTree
+nnoremap <C-n> :NERDTree<CR>
 
