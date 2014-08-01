@@ -277,3 +277,7 @@ nnoremap <C-n> :NERDTree<CR>
 " Haskell mode
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
+
+" vimproc
+set rtp+=~/.vim/bundle/vimproc.vim/autoload
+set rtp+=~/.vim/bundle/vimproc.vim/plugin
