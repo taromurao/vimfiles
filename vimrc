@@ -115,8 +115,8 @@ nmap n nzz
 nmap N Nzz
 
 " ACK
-set grepprg=ack
-nnoremap <leader>a :Ack
+" set grepprg=ack
+" nnoremap <leader>a :Ack
 
 " AG
 nnoremap <leader>a :Ag
