@@ -44,6 +44,9 @@ Bundle 'git://github.com/cakebaker/scss-syntax.vim.git'
 Bundle 'git://github.com/thoughtbot/vim-rspec.git'
 Bundle 'git://github.com/scrooloose/nerdtree.git'
 Bundle 'git://github.com/lukerandall/haskellmode-vim.git'
+Bundle 'git@github.com:eagletmt/neco-ghc.git'
+Bundle 'git@github.com:eagletmt/ghcmod-vim.git'
+Bundle 'mileszs/ack.vim'
 
 filetype plugin indent on     " and turn it back on!
 
