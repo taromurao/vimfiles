@@ -255,3 +255,8 @@ autocmd! bufwritepost vimrc source %
 " Haskell mode
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
+
+" RSpec
+map <Leader>t :call RunCurrentSpecFile()<CR>
+map <Leader>s :call RunNearestSpec()<CR>
+map <Leader>l :call RunLastSpec()<CR>
