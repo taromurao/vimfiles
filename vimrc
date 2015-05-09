@@ -114,10 +114,6 @@ set hlsearch
 nmap n nzz
 nmap N Nzz
 
-" ACK
-" set grepprg=ack
-" nnoremap <leader>a :Ack
-
 " AG
 nnoremap <leader>a :Ag
 "
@@ -234,19 +230,6 @@ if filereadable($HOME . '.vimrc.local')
 endif
 
 "  ---------------------------------------------------------------------------
-"  MacVIM
-"  ---------------------------------------------------------------------------
-
-if has("gui_running")
-  set guioptions-=T " no toolbar set guioptions-=m " no menus
-  set guioptions-=r " no scrollbar on the right
-  set guioptions-=R " no scrollbar on the right
-  set guioptions-=l " no scrollbar on the left
-  set guioptions-=b " no scrollbar on the bottom
-  set guioptions=aiA
-endif
-
-"  ---------------------------------------------------------------------------
 "  GnomeTerminal
 "  ---------------------------------------------------------------------------
 "
@@ -265,14 +248,9 @@ colorscheme solarized
 "  Misc
 "  ---------------------------------------------------------------------------
 
-
-
 " When vimrc, either directly or via symlink, is edited, automatically reload it
 autocmd! bufwritepost .vimrc source %
 autocmd! bufwritepost vimrc source %
-
-" Launch NERDTree
-nnoremap <C-n> :NERDTree<CR>
 
 " Haskell mode
 let g:haddock_browser = "open"
