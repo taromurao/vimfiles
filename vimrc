@@ -201,6 +201,9 @@ au BufRead,BufNewFile Gemfile,Rakefile,Thorfile,config.ru,Vagrantfile,Guardfile,
 " Python
 autocmd FileType python set sw=4 sts=4 et
 
+" JavaScript
+autocmd FileType javascript set sw=4 sts=4 et
+
 " CoffeeScript
 let coffee_compile_vert = 1
 au BufNewFile,BufReadPost *.coffee setl foldmethod=indent
@@ -256,7 +259,15 @@ autocmd! bufwritepost vimrc source %
 let g:haddock_browser = "open"
 let g:haddock_browser_callformat = "%s %s"
 
-" RSpec
+" RSpec" gvim
+set guioptions-=T
+set guioptions-=m
+set guioptions-=r
 map <Leader>t :call RunCurrentSpecFile()<CR>
 map <Leader>s :call RunNearestSpec()<CR>
 map <Leader>l :call RunLastSpec()<CR>
+
+" gvim
+set guioptions-=T
+set guioptions-=m
+set guioptions-=r
