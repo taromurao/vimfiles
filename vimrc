@@ -271,3 +271,9 @@ map <Leader>l :call RunLastSpec()<CR>
 set guioptions-=T
 set guioptions-=m
 set guioptions-=r
+
+" Create a new line, but do not enter the insert mode
+" Press Enter to create a new line below the current line
+" Press Shift+Enter to create a line above.
+nmap <S-Enter> O<Esc>
+nmap <CR> o<Esc>
