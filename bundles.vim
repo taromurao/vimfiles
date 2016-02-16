@@ -15,7 +15,7 @@ Bundle 'gmarik/vundle'
 " Tools
 Bundle 'git://github.com/kien/ctrlp.vim.git'
 Bundle 'git://github.com/altercation/vim-colors-solarized.git'
-Bundle 'git://github.com/bling/vim-airline.git'
+Bundle 'https://github.com/vim-airline/vim-airline-themes.git'
 Bundle 'git://github.com/rking/ag.vim.git'
 Bundle 'git://github.com/sjl/gundo.vim.git'
 Bundle 'git://github.com/vim-scripts/DeleteTrailingWhitespace.git'
