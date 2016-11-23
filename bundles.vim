@@ -47,6 +47,7 @@ Bundle 'git://github.com/lukerandall/haskellmode-vim.git'
 Bundle 'git@github.com:eagletmt/neco-ghc.git'
 Bundle 'git@github.com:eagletmt/ghcmod-vim.git'
 Bundle 'git@github.com:timcharper/textile.vim.git'
+Bundle 'https://github.com/hdima/python-syntax.git'
 
 filetype plugin indent on     " and turn it back on!
 

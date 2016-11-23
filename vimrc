@@ -191,12 +191,17 @@ endif
 let g:airline_powerline_fonts = 1
 let g:airline_theme = 'powerlineish'
 
+" Enable spellchecking with English since it might avoid typos of also variable names of strings in code.
+set spell spelllang=en
 "  ---------------------------------------------------------------------------
 "  Language Mappings
 "  ---------------------------------------------------------------------------
 
 " Other files to consider Ruby
 au BufRead,BufNewFile Gemfile,Rakefile,Thorfile,config.ru,Vagrantfile,Guardfile,Capfile set ft=
+
+" text
+autocmd FileType text set wrap linebreak nolist
 
 " Python
 autocmd FileType python set sw=4 sts=4 et
